@@ -14,9 +14,9 @@ int main() {
 	SDL_Event ev;
 	int deltatime = 0;
 	int fpscap = 1000/144;
-	FBCE::Vec2 origin = FBCE::Vec2(200, 200);
-	FBCE::Vec2 origin2 = FBCE::Vec2(200, 250);
-	FBCE::Vec2 penis = FBCE::Vec2();
+	Vec2 origin = Vec2(200, 200);
+	Vec2 origin2 = Vec2(200, 250);
+	Vec2 penis = Vec2();
 	while (makework) {
 		// timing code
 		deltatime = SDL_GetTicks();
@@ -35,7 +35,7 @@ int main() {
 
 		// logic
 		if (tick > 180) { tick = -180; }
-		penis = FBCE::Vec2.Rotate(origin2, origin, tick);
+		penis = Vec2.Rotate(origin2, origin, tick);
 		SDL_RenderDrawPoint(rend, origin.x, origin.y);
 		SDL_RenderDrawPoint(rend, penis.x, penis.y);
 
