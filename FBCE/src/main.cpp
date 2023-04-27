@@ -4,8 +4,7 @@
 
 int main() {
 	SDL_Init(SDL_INIT_EVERYTHING);
-	SDL_Window * window = SDL_CreateWindow("title", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
-					       400, 400, SDL_WINDOW_RESIZABLE);
+	SDL_Window * window = SDL_CreateWindow("title", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 400, 400, SDL_WINDOW_RESIZABLE);
 	SDL_Renderer * rend = SDL_CreateRenderer(window, 0, 0);
 	
 	// window loop
